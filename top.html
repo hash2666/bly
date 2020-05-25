@@ -12,28 +12,58 @@
 <body>
   <header>
     <div class=header_nav>
-    <div><a href=""><img src="" alt=""></a><h2>Logo</h2></div>
-    <nav>
-      <ul>
-        <li><a href="">NEWS</a></li>
-        <li><a href="">ABOUT</a></li>
-        <li><a href="">MEMBER</a></li>
-        <li><a href="">CONTACT</a></li>
-      </ul>
-    </nav>
-  </div>
-  <h1>Bly'</h1>
+      <div><a href=""><img src="" alt=""></a><img src="img/header-logo.png" alt=""></div>
+      <nav>
+        <ul>
+          <li><a href="">NEWS</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">MEMBER</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h1>Bly'</h1>
   </header>
-  
+
   <main>
     <div class="news">
       <h3>NEWS</h3>
+    </div>
+    <div class="news_text">
+      <h4>セミナーのお知らせ</h4>
+      <p>5/5</p>
+      <p>テストテストテストテストテストテストテストテスト</p>
+      <p>View more</p>
     </div>
   </main>
 
   <section>
     <div class="about">
       <h3>ABOUT</h3>
+
+      <svg width="100%" viewBox="-500 -200 1100.42 1">
+
+        <style type="text/css">
+    
+          .text{
+            text-transform: uppercase;
+            font-weight: bold;
+            fill:#000000;
+          }
+        
+        </style>
+        <path id="our-text" fill="#fff" stroke="#yellow" stroke-miterlimit="10" d="M1288.42.5H0" />
+        <text y="110" font-size="120" font-family: 'Libre Baskerville' , serif;>
+          <textPath id="text-path" class="text" href="#our-text" startOffset="100">
+            Check, check it out check checkCheck, check it out check check check it out check check
+          </textPath>
+        </text>
+      </svg>
+      
+
+
+
+
     </div>
     <div class="member">
       <h3>MEMBER</h3>
@@ -42,13 +72,28 @@
       <h3>CONTACT</h3>
     </div>
   </section>
-  
+
   <footer>
     <h3>FOOTER</h3>
   </footer>
 
 
   <script src="js/top_ttl.js"></script>
+  <script>
+    var textPath = document.querySelector('#text-path');
+
+    function updateTextPathOffset(offset) {
+      textPath.setAttribute('startOffset', offset)
+    }
+
+    function onScroll() {
+      requestAnimationFrame(function () {
+        updateTextPathOffset(window.scrollY * 0.3)
+      })
+    }
+
+    window.addEventListener('scroll', onScroll);
+  </script>
 </body>
 
 </html>
