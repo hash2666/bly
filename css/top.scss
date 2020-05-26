@@ -58,46 +58,65 @@ header {
       }
     }
   }
-}
 
-main {
-  height: 100vh;
+  .news_card {
+    position: absolute;
+    padding: 10px;
+    right: 1.5em;
+    bottom: 2em;
+    width: 30%;
+    height: 30%;
+    background-color: #000;
+    color: rgba(255, 255, 255, 0.747);
+    border-radius: 3px;
+    background: #030303;
+    box-shadow: 11px 11px 22px #030303,
+      -11px -11px 22px #030303;
+      a{
+        text-decoration: none;
+        color: white;
+      }
+    .news_ttl {
+      font-size: 0.8em;
+    }
 
-  .news {
-    h3 {
-      font-size: 8em;
-      color: tomato;
+    .news_day {
+      font-size: 0.6em;
+    }
+
+    .news_text {
+      font-size: 0.4em;
+    }
+
+    .news_more {
+      font-size: 0.8em;
+      float: right;
+      margin-right: 10px;
     }
   }
 }
 
+
 section {
   .about {
     height: 100vh;
+    position: relative;
 
     h3 {
       font-size: 8em;
       color: tomato;
     }
+
     svg {
       width: 100%;
       height: 100vh;
-      position: fixed;
+      position: absolute;
       top: 0;
       z-index: -1;
     }
   }
 
   .member {
-    height: 100vh;
-
-    h3 {
-      font-size: 8em;
-      color: tomato;
-    }
-  }
-
-  .contact {
     height: 100vh;
 
     h3 {
