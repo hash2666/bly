@@ -2,90 +2,126 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/top.css">
-  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/top.css">
 </head>
 
 <body>
-  <header>
-    <div class=header_nav>
-      <div><a href=""><img src="" alt=""></a><img src="img/header-logo.png" alt=""></div>
-      <nav>
-        <ul>
-          <li><a href="">ABOUT</a></li>
-          <li><a href="">MEMBER</a></li>
-          <li><a href="">CONTACT</a></li>
-        </ul>
-      </nav>
+    <header>
+
+    </header>
+    <div id="luxy">
+        <div class="top">
+            <h1>Bly'</h1>
+            <div class="news_card">
+                <h4>NEWS</h4>
+                <p class="news_ttl">xxxxxセミナー</p>
+                <p class="news_day">2020/5/5</p>
+                <p class="news_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit.</p>
+                <a href="">
+                    <p class="news_more">View more ...</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="luxy-el" data-speed-y="0.1" data-offset="-10">
+            <div class="main">
+                <div class="wrapper">
+                </div>
+                <svg width="100%" viewBox="0 0 1417.32 1">
+                    <style type="text/css">
+                        .text {
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            stroke: #dee063;
+                            fill: #dee063;
+                        }
+                    </style>
+                    <path id="our-text" fill="#fff" stroke="#yellow" stroke-miterlimit="10" d="M0 .5h1417.32" />
+                    <text y="310" font-size="120" font-family: 'Libre Baskerville' , serif;>
+                        <textPath id="textMove" class="text" href="#our-text" startOffset="200">
+                            Establishment. 2020. 5. Establishment. 2020. 5. Establishment. 2020. 5.
+                        </textPath>
+                    </text>
+                </svg>
+                <div class="about">
+                    <h2 class="anim">About</h2>
+                    <p class="anim">Placeat reiciendis rem,
+                        quod eum
+                        laboriosam tempore recusandae enim consequuntur quidem nesciunt iusto! Quisquam, alias. </p>
+                    <p class="anim">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <p class="anim">Placeat reiciendis rem,
+                        quod eum
+                        laboriosam tempore recusandae enim consequuntur quidem nesciunt iusto! Quisquam, alias. </p>
+                    <p class="anim">Placeat reiciendis rem,
+                        quod eum
+                        laboriosam tempore recusandae enim consequuntur quidem nesciunt iusto! Quisquam, alias. </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="member">
+            <div class="member-icon">
+                <div class="box item1"><img src="img/member01.jpg" alt=""></div>
+                <div class="box item2"><img src="img/member02.jpg" alt=""></div>
+                <div class="box item3"><img src="img/member03.jpg" alt=""></div>
+                <div class="box item4"><img src="img/member04.jpg" alt=""></div>
+                <div class="box item5"><img src="img/member05.jpg" alt=""></div>             
+            </div>
+        </div>
+
+        <footer>
+
+        </footer>
+
     </div>
-    <h1>Bly'</h1>
-    <div class="news_card">
-      <h4>NEWS</h4>
-      <p class="news_ttl">xxxxxセミナー</p>
-      <p class="news_day">2020/5/5</p>
-      <p class="news_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <a href=""><p class="news_more">View more ...</p></a>
-    </div>
-  </header>
-
-
-  <section>
-    <div class="about">
-      <h3>ABOUT</h3>
-
-      <svg width="100%" viewBox="-500 -200 1100.42 1">
-
-        <style type="text/css">
-    
-          .text{
-            text-transform: uppercase;
-            font-weight: bold;
-            stroke:#bcbe3e;
-          }
-        
-        </style>
-        <path id="our-text" fill="#fff" stroke="#yellow" stroke-miterlimit="10" d="M1288.42.5H0" />
-        <text y="110" font-size="120" font-family: 'Libre Baskerville' , serif;>
-          <textPath id="text-path" class="text" href="#our-text" startOffset="100">
-            Check, check it out check checkCheck, check it out check check check it out check check
-          </textPath>
-        </text>
-      </svg>
-      
 
 
 
 
-    </div>
-    <div class="member">
-      <h3>MEMBER</h3>
-    </div>
-  </section>
+    <script src="js/luxy.js" charset="utf-8"></script>
+    <script charset="utf-8">
+        luxy.init({
+            wrapper: "#luxy",
+            wrapperSpeed: 0.1
+        });
+    </script>
+    <script>
+        const $text = document.querySelector('#textMove');
 
-  <footer>
-    <h3>FOOTER</h3>
-  </footer>
+        function updateOffset(offset) {
+            $text.setAttribute('startOffset', -offset)
+        }
 
+        function onScroll() {
+            requestAnimationFrame(() => {
+                updateOffset(window.scrollY * 0.5)
+            })
+        }
 
-  <script src="js/top_ttl.js"></script>
-  <script>
-    var textPath = document.querySelector('#text-path');
+        window.addEventListener('scroll', onScroll);
 
-    function updateTextPathOffset(offset) {
-      textPath.setAttribute('startOffset', offset)
-    }
+        const titles = document.querySelectorAll('.anim');
 
-    function onScroll() {
-      requestAnimationFrame(function () {
-        updateTextPathOffset(window.scrollY * 0.3)
-      })
-    }
+        observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting == true) {
+                    entry.target.classList.add('animate');
+                } else {
+                    entry.target.classList.remove('animate');
+                }
+            })
+        })
 
-    window.addEventListener('scroll', onScroll);
-  </script>
+        titles.forEach(title => {
+            observer.observe(title);
+        })
+    </script>
+
 </body>
 
 </html>

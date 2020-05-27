@@ -1,137 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet');
+
 body,
 html {
-  margin: 0;
+    margin: 0;
 }
 
 body {
-  background-color: #161616;
+    background-color: #161616;
+}
+
+
+
+.top {
+    width: 100%;
+    height: 105vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #161616;
+
+
+
+    .news_card {
+        position: absolute;
+        padding: 10px;
+        right: 1.5em;
+        bottom: 5em;
+        width: 30%;
+        height: 30%;
+        background-color: #000;
+        color: rgba(255, 255, 255, 0.747);
+        border-radius: 3px;
+        background: #030303;
+        box-shadow: 11px 11px 22px #030303,
+            -11px -11px 22px #030303;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .news_ttl {
+            font-size: 0.8em;
+        }
+
+        .news_day {
+            font-size: 0.6em;
+        }
+
+        .news_text {
+            font-size: 0.4em;
+        }
+
+        .news_more {
+            font-size: 0.8em;
+            float: right;
+            margin-right: 10px;
+        }
+    }
 }
 
 h1 {
-  font-size: 14vw;
-  font-weight: 700;
-  font-family: 'Kaushan Script', cursive;
-  flex: 1;
-  position: relative;
-  text-align: center;
-  margin: 0;
-  -webkit-text-fill-color: transparent;
-  background-image: url(../img/top01.gif);
-  background-size: cover;
-  -webkit-background-clip: text;
-  background-repeat: no-repeat;
+    font-size: 14vw;
+    font-weight: 700;
+    font-family: 'Kaushan Script', cursive;
+    flex: 1;
+    // position: relative;
+    text-align: center;
+    margin: 0;
+    -webkit-text-fill-color: transparent;
+    background-image: url(../img/top01.gif);
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
 }
 
-header {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-
-  .header_nav {
-    position: absolute;
-    position: fixed;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: rgba(26, 26, 26, 0.6);
-
-    img {
-      width: 5em;
-    }
-
-    ul {
-      display: flex;
-      justify-content: space-around;
-
-      a {
-        text-decoration: none;
-        color: white;
-        font-family: 'Kaushan Script', cursive;
-        margin: auto;
-      }
-
-      li {
-        list-style: none;
-        padding-right: 10px;
-      }
-    }
-  }
-
-  .news_card {
-    position: absolute;
-    padding: 10px;
-    right: 1.5em;
-    bottom: 2em;
-    width: 30%;
-    height: 30%;
-    background-color: #000;
-    color: rgba(255, 255, 255, 0.747);
-    border-radius: 3px;
-    background: #030303;
-    box-shadow: 11px 11px 22px #030303,
-      -11px -11px 22px #030303;
-      a{
-        text-decoration: none;
-        color: white;
-      }
-    .news_ttl {
-      font-size: 0.8em;
-    }
-
-    .news_day {
-      font-size: 0.6em;
-    }
-
-    .news_text {
-      font-size: 0.4em;
-    }
-
-    .news_more {
-      font-size: 0.8em;
-      float: right;
-      margin-right: 10px;
-    }
-  }
-}
-
-
-section {
-  .about {
-    height: 100vh;
+.main {
     position: relative;
+    height: 100vh;
 
-    h3 {
-      font-size: 8em;
-      color: tomato;
+    .wrapper {
+        background: url(../img/about_img.jpg);
+        opacity: 0.4;
+        height: 70%;
+        background-size: cover;
     }
 
     svg {
-      width: 100%;
-      height: 100vh;
-      position: absolute;
-      top: 0;
-      z-index: -1;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 5em;
+        z-index: 1;
     }
-  }
 
-  .member {
-    height: 100vh;
+    .about {
+        position: absolute;
+        right: 2em;
+        top: 60vh;
+        color: white;
+        width: 45%;
+        height: 30vh;
 
-    h3 {
-      font-size: 8em;
-      color: tomato;
+        h2 {
+            font-size: 7em;
+            font-family: 'Kaushan Script', cursive;
+        }
+
+        p {
+            font-size: 1em;
+            color: rgba(255, 255, 255, 0.747);
+        }
     }
-  }
 }
 
-footer {
-  height: 50vh;
-  background-color: #868484;
+.animate {
+    animation: reveal 1.8s forwards;
+}
 
-  h3 {
-    font-size: 8em;
-    color: tomato;
-  }
+@keyframes reveal {
+    from {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.member {
+    position: relative;
+    height: 150vh;
+    .member-icon{
+        transform: translateY(50%); 
+        height: 90vh;   
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        background-image: url(../img/memberlogo01.png);
+        background-size: cover;
+        .item1 {
+            position: absolute;
+            top: 0%;
+            left: 50%;
+        }
+        .item2 {
+            position: absolute;
+            top: 25%;
+            left: 90%;
+        }
+        .item3 {
+            position: absolute;
+            top: 25%;
+            left: 10%;
+        }
+        .item4 {
+            position: absolute;
+            top: 70%;
+            left: 30%;
+        }
+        .item5 {
+            position: absolute;
+            top: 70%;
+            left: 70%;
+        }
+    }  
+}
+.member{
+    img {
+        width: 15em;
+        border-radius: 50%;
+    }
+}
+
+
+footer {
+    height: 40vh;
+    background-color: rgb(211, 209, 209);
 }

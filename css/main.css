@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  z-index: 99;
+}
+
+header .logo img {
+  padding-left: 4em;
+  width: 10em;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F7D708;
+  opacity: 0.4;
+  text-align: center;
+  padding-top: 1em;
+}
+
+header ul li {
+  padding: 2em;
+}
+
+#main.black {
+  background-color: #F7D708;
+  height: 105vh;
+  -webkit-transition: 1.2s ease;
+  transition: 1.2s ease;
+}
+
+#main.black .news_card {
+  position: absolute;
+  padding: 10px;
+  right: 1.5em;
+  bottom: 5em;
+  width: 30%;
+  border-radius: 9px;
+  background: #f0d000;
+  -webkit-box-shadow: -11px 11px 22px #d6b900, 11px -11px 22px #ffe700;
+          box-shadow: -11px 11px 22px #d6b900, 11px -11px 22px #ffe700;
+}
+
+#main.black .news_card a {
+  color: white;
+}
+
+#main.black .news_card .news_ttl {
+  font-size: 0.8em;
+}
+
+#main.black .news_card .news_day {
+  font-size: 0.6em;
+}
+
+#main.black .news_card .news_text {
+  font-size: 0.4em;
+}
+
+#main.black .news_card .news_more {
+  font-size: 0.8em;
+  float: right;
+  margin-right: 10px;
+}
+
+main {
+  background-color: #161616;
+  -webkit-transition: 1.2S ease;
+  transition: 1.2S ease;
+}
+
+main .top_page {
+  height: 105vh;
+  position: relative;
+}
+
+main .top_page .main_ttl {
+  position: absolute;
+  left: 8em;
+  top: 16%;
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+}
+
+main .top_page .main_ttl h1 {
+  font-size: 8em;
+}
+
+main .top_page .main_ttl p {
+  font-size: 3em;
+  border-bottom: 1px solid;
+}
+
+main .top_page .news_card {
+  position: absolute;
+  padding: 10px;
+  right: 1.5em;
+  bottom: 5em;
+  width: 30%;
+  height: 30%;
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.747);
+  border-radius: 3px;
+  background: #030303;
+  -webkit-box-shadow: 11px 11px 22px #030303, -11px -11px 22px #030303;
+          box-shadow: 11px 11px 22px #030303, -11px -11px 22px #030303;
+}
+
+main .top_page .news_card a {
+  color: white;
+}
+
+main .top_page .news_card .news_ttl {
+  font-size: 0.8em;
+}
+
+main .top_page .news_card .news_day {
+  font-size: 0.6em;
+}
+
+main .top_page .news_card .news_text {
+  font-size: 0.4em;
+}
+
+main .top_page .news_card .news_more {
+  font-size: 0.8em;
+  float: right;
+  margin-right: 10px;
+}
+
+.about {
+  position: relative;
+  height: 150vh;
+  background-color: #161616;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about .wrapper {
+  background: url(../img/img02.jpg);
+  opacity: 0.4;
+  height: 65%;
+  background-size: cover;
+}
+
+.about svg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 7em;
+  z-index: 1;
+}
+
+.about .about_text {
+  position: absolute;
+  right: 5em;
+  top: 75vh;
+  color: white;
+  width: 35%;
+  height: 30vh;
+}
+
+.about .about_text h2 {
+  font-size: 7em;
+}
+
+.about .about_text p {
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.747);
+}
+
+.member {
+  height: 100vh;
+  background-color: #161616;
+  width: 100%;
+}
+
+.member .member_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3em;
+}
+
+.member img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 3em;
+}
+
+.demo {
+  height: 30vh;
+  background-color: #e8ecec;
+}
+
+footer {
+  height: 50vh;
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+  background-color: cyan;
+}
+
+.animate {
+  -webkit-animation: reveal 1.8s forwards;
+          animation: reveal 1.8s forwards;
+}
+
+@-webkit-keyframes reveal {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+/*# sourceMappingURL=main.css.map */
