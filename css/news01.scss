@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    z-index: 99;
+
+    .logo {
+        img {
+            padding-left: 4em;
+            width: 10em;
+        }
+    }
+
+    ul {
+        display: flex;
+        background-color: #F7D708;
+        opacity: 0.4;
+        text-align: center;
+        padding-top: 0.6em;
+
+        li {
+            padding: 2em;
+
+            a {
+                color: rgba(255, 255, 255, 0.973);
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+main {
+    height: 100vh;
+    background-color: #161616;
+    align-items: center;
+
+    .flex {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20vh;
+
+        .news01_text {
+            height: 70vh;
+            width: 35%;
+            background-color: #000;
+            color: rgba(255, 255, 255, 0.747);
+            background-color: #000;
+            color: rgba(255, 255, 255, 0.747);
+            border-radius: 3px;
+            background: #030303;
+            box-shadow: 11px 11px 22px #030303,
+                -11px -11px 22px #030303;
+        }
+
+        .news01_map {
+            height: 70vh;
+            width: 55%;
+            text-align: center;
+            background-color: #000;
+            color: rgba(255, 255, 255, 0.747);
+            background-color: #000;
+            color: rgba(255, 255, 255, 0.747);
+            border-radius: 3px;
+            background: #030303;
+            box-shadow: 11px 11px 22px #030303,
+                -11px -11px 22px #030303;
+
+            .location_map {
+                width: 90%;
+                margin: 3% auto;
+
+                iframe {
+                    width: 100%;
+                }
+            }
+
+            .btn {
+                text-decoration: none;
+                background-color: #F7D708;
+                opacity: 0.6;
+                color: #333333;
+            }
+        }
+    }
+}
