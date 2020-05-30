@@ -74,8 +74,8 @@ main .flex .news01_text {
   color: rgba(255, 255, 255, 0.747);
   border-radius: 3px;
   background: #030303;
-  -webkit-box-shadow: 11px 11px 22px #030303, -11px -11px 22px #030303;
-          box-shadow: 11px 11px 22px #030303, -11px -11px 22px #030303;
+  -webkit-box-shadow: 11px 11px 22px #030303, -11px -11px 22px #030303;
+          box-shadow: 11px 11px 22px #030303, -11px -11px 22px #030303;
 }
 
 main .flex .news01_map {
@@ -88,8 +88,8 @@ main .flex .news01_map {
   color: rgba(255, 255, 255, 0.747);
   border-radius: 3px;
   background: #030303;
-  -webkit-box-shadow: 11px 11px 22px #030303, -11px -11px 22px #030303;
-          box-shadow: 11px 11px 22px #030303, -11px -11px 22px #030303;
+  -webkit-box-shadow: 11px 11px 22px #030303, -11px -11px 22px #030303;
+          box-shadow: 11px 11px 22px #030303, -11px -11px 22px #030303;
 }
 
 main .flex .news01_map .location_map {

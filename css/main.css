@@ -65,8 +65,8 @@ header ul li a {
   width: 30%;
   border-radius: 9px;
   background: #f0d000;
-  -webkit-box-shadow: -11px 11px 22px #d6b900, 11px -11px 22px #ffe700;
-          box-shadow: -11px 11px 22px #d6b900, 11px -11px 22px #ffe700;
+  -webkit-box-shadow: -11px 11px 22px #d6b900, 11px -11px 22px #ffe700;
+          box-shadow: -11px 11px 22px #d6b900, 11px -11px 22px #ffe700;
 }
 
 #main.black .news_card a {
@@ -131,8 +131,8 @@ main .top_page .news_card {
   color: rgba(255, 255, 255, 0.747);
   border-radius: 3px;
   background: #030303;
-  -webkit-box-shadow: 11px 11px 22px #030303, -11px -11px 22px #030303;
-          box-shadow: 11px 11px 22px #030303, -11px -11px 22px #030303;
+  -webkit-box-shadow: 11px 11px 22px #030303, -11px -11px 22px #030303;
+          box-shadow: 11px 11px 22px #030303, -11px -11px 22px #030303;
 }
 
 main .top_page .news_card a {
@@ -191,6 +191,11 @@ main .top_page .news_card .news_more {
 .about .about_text h2 {
   font-size: 7em;
   font-weight: 400;
+}
+
+.about .about_text h3 {
+  font-size: 2em;
+  font-weight: 200;
 }
 
 .about .about_text p {

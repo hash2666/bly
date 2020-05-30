@@ -1,0 +1,47 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100%;
+    background-color: #161616;
+    position: relative;
+
+    .table01 {
+        position: absolute;
+        top: 10vh;
+        left: 10%;
+        width: 80%;
+        height: 80vh;
+        background-color: rgb(223, 223, 223);
+
+        .table-flex {
+            display: flex;
+            justify-content: space-around;
+
+            .table-img {
+                
+
+                img {
+                    height: 80vh;
+                    object-fit: cover;
+                }
+            }
+            .table-text{
+                background-color: #121212;
+                margin-top: 10vh;
+                color: rgb(255, 255, 255);
+                padding: 20vh 10% 0 10% ;
+                h3{
+                    text-align: center;
+                }
+                li{
+                    list-style: none;
+                }
+            }
+        }
+    }
+}
