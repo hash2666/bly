@@ -23,22 +23,31 @@ body {
             justify-content: space-around;
 
             .table-img {
-                
+
 
                 img {
                     height: 80vh;
                     object-fit: cover;
                 }
             }
-            .table-text{
-                background-color: #121212;
-                margin-top: 10vh;
+
+            .table-text {
+                background-color: #272727;
+                margin-top: 20vh;
+                margin-bottom: 3vh;
                 color: rgb(255, 255, 255);
-                padding: 20vh 10% 0 10% ;
-                h3{
+                padding: 5vh 10% 0 10%;
+                border-radius: 0px;
+                // background: #ece4e4;
+                box-shadow: 6px 6px 12px #d7cfcf,
+                    -6px -6px 12px #fff9f9;
+
+                h3 {
                     text-align: center;
+                    padding: 5vh;
                 }
-                li{
+
+                li {
                     list-style: none;
                 }
             }
