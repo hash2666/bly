@@ -20,7 +20,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   z-index: 99;
 }
 
@@ -33,7 +33,7 @@ header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #F7D708;
+  background-color: #f7d708;
   opacity: 0.4;
   text-align: center;
   padding-top: 0.6em;
@@ -95,16 +95,22 @@ main .flex .news01_map {
 main .flex .news01_map .location_map {
   width: 90%;
   margin: 3% auto;
+  height: 100%;
 }
 
 main .flex .news01_map .location_map iframe {
-  width: 100%;
+  width: 90%;
+  height: 65vh;
 }
 
-main .flex .news01_map .btn {
-  text-decoration: none;
-  background-color: #F7D708;
+main .flex .news01_map .location_map .btn {
+  background-color: #f7d708;
   opacity: 0.6;
+}
+
+main .flex .news01_map .location_map .btn a {
+  text-decoration: none;
   color: #333333;
+  background-color: #f7d708;
 }
 /*# sourceMappingURL=news01.css.map */
