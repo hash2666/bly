@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap");
 html,
 body {
   margin: 0;
@@ -11,6 +12,123 @@ a {
   text-decoration: none;
 }
 
+.skew {
+  -webkit-animation: skew 3s infinite;
+          animation: skew 3s infinite;
+}
+
+@-webkit-keyframes skew {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  33% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  33.3% {
+    -webkit-transform: skewX(30deg);
+            transform: skewX(30deg);
+  }
+  33.6% {
+    -webkit-transform: skewX(-30deg);
+            transform: skewX(-30deg);
+  }
+  33.9% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  66% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  66.3% {
+    -webkit-transform: skewX(5deg);
+            transform: skewX(5deg);
+  }
+  66.6% {
+    -webkit-transform: skewX(-5deg);
+            transform: skewX(-5deg);
+  }
+  66.9% {
+    -webkit-transform: none;
+            transform: none;
+    color: #666262;
+  }
+  77% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  77.3% {
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  77.6% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+  77.9% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes skew {
+  0% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  33% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  33.3% {
+    -webkit-transform: skewX(30deg);
+            transform: skewX(30deg);
+  }
+  33.6% {
+    -webkit-transform: skewX(-30deg);
+            transform: skewX(-30deg);
+  }
+  33.9% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  66% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  66.3% {
+    -webkit-transform: skewX(5deg);
+            transform: skewX(5deg);
+  }
+  66.6% {
+    -webkit-transform: skewX(-5deg);
+            transform: skewX(-5deg);
+  }
+  66.9% {
+    -webkit-transform: none;
+            transform: none;
+    color: #666262;
+  }
+  77% {
+    -webkit-transform: none;
+            transform: none;
+  }
+  77.3% {
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg);
+  }
+  77.6% {
+    -webkit-transform: skewX(-15deg);
+            transform: skewX(-15deg);
+  }
+  77.9% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
 header {
   position: fixed;
   display: -webkit-box;
@@ -20,7 +138,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   z-index: 99;
 }
 
@@ -29,29 +147,14 @@ header .logo img {
   width: 10em;
 }
 
-header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #F7D708;
-  opacity: 0.4;
-  text-align: center;
-  padding-top: 0.6em;
-}
-
-header ul li {
-  padding: 2em;
-}
-
-header ul li a {
-  color: white;
-  font-size: 1.5em;
-  font-weight: 400;
-  z-index: 10;
+header .marie img {
+  width: 120px;
+  border-radius: 50%;
+  margin: 1em;
 }
 
 #main.black {
-  background-color: #F7D708;
+  background-color: #f7d708;
   height: 105vh;
   -webkit-transition: 1.2s ease;
   transition: 1.2s ease;
@@ -93,8 +196,8 @@ header ul li a {
 
 main {
   background-color: #161616;
-  -webkit-transition: 1.2S ease;
-  transition: 1.2S ease;
+  -webkit-transition: 1.2s ease;
+  transition: 1.2s ease;
 }
 
 main .top_page {
@@ -105,13 +208,14 @@ main .top_page {
 main .top_page .main_ttl {
   position: absolute;
   left: 8em;
-  top: 16%;
-  font-family: 'Montserrat', sans-serif;
+  top: -5%;
+  font-family: "Nothing You Could Do", cursive;
   color: #333333;
 }
 
 main .top_page .main_ttl h1 {
-  font-size: 8em;
+  font-size: 12em;
+  padding: 0;
   font-weight: 800;
 }
 
@@ -161,7 +265,7 @@ main .top_page .news_card .news_more {
   position: relative;
   height: 150vh;
   background-color: #161616;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .about .wrapper {
@@ -213,6 +317,8 @@ main .top_page .news_card .news_more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-top: 30vh;
 }
 
@@ -299,23 +405,23 @@ main .top_page .news_card .news_more {
 }
 
 .modal.is-open {
-  -webkit-animation: modal_open .5s ease forwards;
-          animation: modal_open .5s ease forwards;
+  -webkit-animation: modal_open 0.5s ease forwards;
+          animation: modal_open 0.5s ease forwards;
 }
 
 .modal.is-open .modal-inner {
-  -webkit-animation: modal_inner_open .5s ease forwards;
-          animation: modal_inner_open .5s ease forwards;
+  -webkit-animation: modal_inner_open 0.5s ease forwards;
+          animation: modal_inner_open 0.5s ease forwards;
 }
 
 .modal.is-close {
-  -webkit-animation: modal_close .5s ease forwards;
-          animation: modal_close .5s ease forwards;
+  -webkit-animation: modal_close 0.5s ease forwards;
+          animation: modal_close 0.5s ease forwards;
 }
 
 .modal.is-close .modal-inner {
-  -webkit-animation: modal_inner_close .5s ease forwards;
-          animation: modal_inner_close .5s ease forwards;
+  -webkit-animation: modal_inner_close 0.5s ease forwards;
+          animation: modal_inner_close 0.5s ease forwards;
 }
 
 @-webkit-keyframes modal_open {
@@ -431,7 +537,7 @@ footer .footer_flex {
 }
 
 footer .footer_flex .email {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 00;
   font-size: 2.5em;
   -webkit-box-flex: 2;
@@ -440,7 +546,7 @@ footer .footer_flex .email {
 }
 
 footer .footer_flex .form {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
