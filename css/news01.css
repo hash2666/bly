@@ -9,6 +9,8 @@ li,
 a {
   list-style: none;
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.973);
+  font-size: 1.5em;
 }
 
 header {
@@ -26,7 +28,7 @@ header {
 
 header .logo img {
   padding-left: 4em;
-  width: 10em;
+  width: 6em;
 }
 
 header ul {
@@ -36,16 +38,11 @@ header ul {
   background-color: #f7d708;
   opacity: 0.4;
   text-align: center;
-  padding-top: 0.6em;
+  padding-top: 0.4em;
 }
 
 header ul li {
-  padding: 2em;
-}
-
-header ul li a {
-  color: rgba(255, 255, 255, 0.973);
-  font-size: 1.5em;
+  padding: 1em;
 }
 
 main {
@@ -103,14 +100,12 @@ main .flex .news01_map .location_map iframe {
   height: 65vh;
 }
 
-main .flex .news01_map .location_map .btn {
+main .flex .news01_map .btn {
   background-color: #f7d708;
   opacity: 0.6;
 }
 
-main .flex .news01_map .location_map .btn a {
-  text-decoration: none;
-  color: #333333;
+main .flex .news01_map .btn a {
   background-color: #f7d708;
 }
 /*# sourceMappingURL=news01.css.map */
